@@ -1,3 +1,17 @@
+terraform {
+  cloud {
+    organization = "jorgesoft"
+
+    workspaces {
+      name = "cncf_cloud_cluster_demo"
+    }
+  }
+}
+
+provider "azurerm" {
+  features {}
+}
+
 provider "azurerm" {
   features {}
 }
